@@ -11,7 +11,7 @@ print("\n\n\t Calculando tipos de Errores para el numero de Euler\n")
 """En la vida real no conocemos el valor real, entonces tenemos que hacer
 definir un termino y tomarlo como el valor real temporal """
 valorReal = 1/factorial(0)
-print(f'El valor real inicial es {valorReal}  = 1/0!')
+print(f'El valor real inicial es {valorReal}  = 1/factorial(0)')
 eAprox = 0 
 n =1
 
