@@ -18,8 +18,8 @@ n =1
 """Para no estar calculando cada valor aproximado se usara un ciclo """
 
 while True: #Es infinito, no se detiene
+    print(f'\nEstamos en el termino {n} del calculo')
     eAprox =valorReal + 1/factorial(n)
-    print(f'\nEstamos en el termino {n+1} del calculo')
     print(f'\tEl valor de   eAproximado: {eAprox}')
 
     errorAbsoluto = abs(valorReal - eAprox)
@@ -32,6 +32,8 @@ while True: #Es infinito, no se detiene
     print(f'El error Relativo Porcentual es: {errorRPorcentual} \n')
 
     valorReal = eAprox #Actualizamos el Valor relativo y reducir deltas
-    n += n
+    n +=1
     if errorRPorcentual < 1.5 : 
         break #El break detiene el while 
+
+    
