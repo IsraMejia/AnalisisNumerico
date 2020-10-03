@@ -26,7 +26,7 @@ while True:
   it+=1
   if(Ea < tol):
     print("Raíz encontrada")
-    print("{:0.4g}".format(c) )
+    print("{:0.4g}".format(c) ) #4cifras significativas
     break
   elif (fa*fc)<0:
     #El límite superior será c
