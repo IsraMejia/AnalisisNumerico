@@ -4,11 +4,11 @@ print('\n \t\tMetodo de Lin Bairstown - Factores Cuadraticos')
 print('Cortesia de Diana Portillo, Alejandro Tapia e Ian Marentes que me ayudaron a recuperar el codigo')
 print('\n\n\t Los resultados tabulados son:\n')
 #Polinomio
-a=[1,-1,6,-3,4] #Coeficientes del polinomio
+a=[24,-26, 9, -1] #Coeficientes del polinomio
 p=0
 q=0
 
-tol=0.01
+tol=0.1
 b=copy.deepcopy(a) #Para poteger los valores de a
 n=len(a) #Numero de elementos en a
 
@@ -32,3 +32,7 @@ while True:
     if(abs(R) < tol and abs(S) < tol):
         print("\n\n")
         break
+print("\n Esto solo sirve para 3er grado")
+print("p = {:<8.4g}  , q = {:<8.4g}".format(p,q))
+print("b0 = {:<8.4g} , b1 = {:<8.4g}".format(b[0], b[1]))
+print("\n Esto solo sirve para 3er grado, reescribir resultado y calcular raices\n")
