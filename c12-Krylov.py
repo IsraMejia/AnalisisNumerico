@@ -1,6 +1,7 @@
 import numpy as np
 import c12GaussJordan as gs
 import c12MetLin as lin
+import c12formulaGeneral_C_R as FG
 #Metodo de Krylov
 
 print('Metodo de Krylov')
@@ -29,14 +30,17 @@ def krylov(A, y):
   return m, -Ak
 
 m, Ak = krylov(A, y)
-  
+
 print("b=\n", Ak)
 
 b = gs.gaussJordan(m, Ak) #Se usa el metodo de gaus Jordan del archivo que se importa
 print( b) 
 
-b = [1, -8, 4, 17]
+b = [1, -8, 4, 17] #El 1 es el primer elemento del polinomio
 lin.Lin(b, 0.0001) #Se le manda b y su tolerancia
 
-print('Raiz 1 es = \n', 7.009)
-print()
+FG.discriminante(1, -0.9007, -2.395)
+
+print('\n\n\n Raiz 1 es = 7.009')
+print('\n Raiz 2 es = 2.062 ')
+print('\n Raiz 3 es = -1.161')

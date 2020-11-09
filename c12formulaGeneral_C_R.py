@@ -1,17 +1,17 @@
 print('\n\nMejia Alba Israel Hipolito \t\t\tGrupo:07  - AnalisisNumerico')
 
 print('\nEste programa calcula los resultados para raices Complejas y Reales')
-print('haciendo uso de la formula general.')
-print('Ingrese los correspondientes coeficientes de tu ecuacion ax^2 + bx + c\n')
+# print('haciendo uso de la formula general.')
+# print('Ingrese los correspondientes coeficientes de tu ecuacion ax^2 + bx + c\n')
 
-a = float(input('Coeficiente del termino cuadratico, a='))
-b = float(input('Coeficiente del termino lineal, b='))
-c = float(input('Coeficiente o termino independiente, c='))
-discri = raiz = x1 = x2 = 0.0
+# a = float(input('Coeficiente del termino cuadratico, a='))
+# b = float(input('Coeficiente del termino lineal, b='))
+# c = float(input('Coeficiente o termino independiente, c='))
+# discri = raiz = x1 = x2 = 0.0
 
 
-while( a == 0 ):
-    a = float(input('Ingrese un valor Distinto a 0 del Coeficiente del termino cuadratico, a='))
+# while( a == 0 ):
+#     a = float(input('Ingrese un valor Distinto a 0 del Coeficiente del termino cuadratico, a='))
 
 
 def real(a, b, c , discri):
@@ -44,4 +44,4 @@ def discriminante(a , b , c):
         discri = -1 * discri
         return imaginario(a, b, c , discri)
 
-discriminante (a , b , c)
+# discriminante (a , b , c)
