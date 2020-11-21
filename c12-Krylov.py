@@ -7,7 +7,7 @@ import c12formulaGeneral_C_R as FG
 print('Metodo de Krylov')
 
 A=np.matrix([[1,2,4],[7,3,1],[0,1,4]])
-y=np.matrix([[1],[0],[0]])
+y=np.matrix([[1],[0],[0]] )
 
 print("A=\n",A)
 print("y=\n",y)
