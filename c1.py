@@ -4,6 +4,7 @@ print(2.5e3) # ->2500
 viga = 1000 #10 metros
 vigaAproximada = 1050 # medida aproximada
 
+
 eAbs = abs(viga - vigaAproximada)
 print(f'El error absoluto es {eAbs}')
 
